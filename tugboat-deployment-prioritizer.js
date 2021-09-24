@@ -1,9 +1,8 @@
 // ==UserScript==
-// @name     tugboat-deployment-prioritzer
-// @version  1
-// @include  https://tugboat.procorecon.com/*
+// @name     tugboat-prioritzer
+// @version  2
+// @include  https://tugboat.procorecon.com/* https://tugboat.procoretech-qa.com/*
 // @grant    none
-// @namespace https://github.com/procore-psoares/user-scripts/
 // ==/UserScript==
 
 function sleep(ms) {
@@ -63,5 +62,6 @@ async function waitForPageLoad() {
     watchForTableChanges(tbody)
     relocateProcoreWeb(tbody)
 }
+
 
 waitForPageLoad()
